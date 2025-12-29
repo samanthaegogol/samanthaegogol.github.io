@@ -4177,18 +4177,18 @@ textarea {
 }
 
 /* Stronger headings */
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
 /* Banner name: confident but not shouty */
 #banner h1 {
-  font-weight: 900; font-size: 1.4em;
+  font-weight: 900; font-size: 1.6em;
 }
 
 /* Banner descriptor text */
 #banner p {
-  font-weight: 500; font-size: 1em;
+  font-weight: 600; font-size: 1.1em;
 }
 
 /* Improve button legibility */
@@ -4211,9 +4211,9 @@ p {
 #banner .hero-photo.image {
   display: block !important;
   float: none !important;
-  flex: 0 0 170px !important;
-  width: 220px !important;
-  height: 220px !important;
+  flex: 0 0 220px !important;
+  width: 180px !important;
+  height: 180px !important;
   border-radius: 999px !important;
   overflow: hidden !important;
 }
