@@ -4211,10 +4211,10 @@ p {
 #banner .hero-photo.image {
   display: block !important;
   float: none !important;
-  flex: 0 0 180px !important;
-  width: 180px !important;
-  height: 180px !important;
-  max-width: 40%;
+  flex: 0 0 170px !important;
+  width: 170px !important;
+  height: 170px !important;
+  max-width: 60%;
   border-radius: 999px !important;
   overflow: hidden !important;
 }
