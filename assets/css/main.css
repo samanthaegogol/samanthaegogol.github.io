@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -4172,30 +4174,6 @@ input, select, textarea {
 
 /* ===== Typography upgrade: Inter ===== */
 
-body,
-input,
-select,
-textarea {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont,
-               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-weight: 400;
-}
-
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-}
-
-/* Hero intro text */
-#banner p {
-  font-weight: 500;     /* THIS is what you’re missing */
-  font-size: 1.1em;
-}
-
-/* Buttons */
-.button {
-  font-weight: 600;
-}
 
 
 /* Banner name: confident but not shouty */
