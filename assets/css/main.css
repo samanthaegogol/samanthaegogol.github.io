@@ -4159,3 +4159,118 @@ input, select, textarea {
 #banner:after {
   opacity: 0.55; /* try 0.45–0.65 */
 }
+
+/* --- Accessibility + readability overrides --- */
+
+/* Disable forced ALL CAPS in hero text */
+#banner p {
+  text-transform: none;
+  letter-spacing: 0.02em; /* keep subtle spacing */
+}
+
+/* Increase overall body readability */
+body,
+input,
+select,
+textarea {
+  font-weight: 400;
+}
+
+/* Stronger headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+/* Banner name: confident but not shouty */
+#banner h1 {
+  font-weight: 700;
+}
+
+/* Banner descriptor text */
+#banner p {
+  font-weight: 400;
+}
+
+/* Improve button legibility */
+.button {
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+/* Improve paragraph readability */
+p {
+  line-height: 1.7;
+}
+
+/* --- Hero: photo + text split layout --- */
+#banner .hero-split {
+  display: flex;
+  align-items: center;
+  gap: 2.25rem;
+  max-width: 70rem;
+}
+
+/* Photo */
+#banner .hero-photo {
+  flex: 0 0 150px;
+  width: 150px;
+  height: 150px;
+}
+
+#banner .hero-photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 999px;
+  object-fit: cover;
+  object-position: center 20%;
+  border: solid 2px rgba(255, 255, 255, 0.18);
+}
+
+/* Text block */
+#banner .hero-text {
+  flex: 1 1 auto;
+  text-align: left;
+}
+
+/* Mobile: stack photo above text */
+@media screen and (max-width: 736px) {
+  #banner .hero-split {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #banner .hero-photo,
+  #banner .hero-photo img {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+/* --- Hero image: match Solid State circular spotlight style --- */
+
+#banner .hero-photo .image {
+  border-radius: 100%;
+  overflow: hidden;
+  width: 160px;
+  height: 160px;
+  display: block;
+}
+
+#banner .hero-photo .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+/* Responsive tweak */
+@media screen and (max-width: 736px) {
+  #banner .hero-photo .image {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+.hero-photo img {
+  border-radius: 999px;
+}
