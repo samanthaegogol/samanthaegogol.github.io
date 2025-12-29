@@ -4188,7 +4188,7 @@ h2, h3, h4, h5, h6 {
 
 /* Banner descriptor text */
 #banner p {
-  font-weight: 600; font-size: 1.1em;
+  font-weight: 500; font-size: 1.1em;
 }
 
 /* Improve button legibility */
@@ -4214,7 +4214,7 @@ p {
   flex: 0 0 170px !important;
   width: 170px !important;
   height: 170px !important;
-  max-width: 60%;
+  max-width: 80%;
   border-radius: 999px !important;
   overflow: hidden !important;
 }
