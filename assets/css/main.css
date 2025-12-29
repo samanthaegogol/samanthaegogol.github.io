@@ -4183,7 +4183,7 @@ input, select, textarea {
 
 /* Banner descriptor text */
 #banner p {
-  font-weight: 400; font-size: 1.1em;
+  font-weight: 400; font-size: 1em;
 }
 
 /* Improve button legibility */
