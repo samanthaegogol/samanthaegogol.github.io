@@ -4212,18 +4212,19 @@ p {
   display: block !important;
   float: none !important;
   flex: 0 0 170px !important;
-  width: 170px !important;
+width: 170px !important;
   height: 170px !important;
-  max-width: 80%;
-  border-radius: 999px !important;
   overflow: hidden !important;
+  border-radius: 999px !important;
 }
 
+/* Zoom the image inside the circle */
+#banner .hero-photo.image img{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center 20% !important;
 
-#banner .hero-photo.image img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 20%;
+  transform: scale(1.25) !important;   /* <- increase to zoom in */
+  transform-origin: center;            /* <- where it “zooms from” */
 }
