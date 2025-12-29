@@ -1,5 +1,7 @@
-@import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 
 /*
 	Solid State by HTML5 UP
@@ -4168,18 +4170,33 @@ input, select, textarea {
   letter-spacing: 0.02em; /* keep subtle spacing */
 }
 
-/* Increase overall body readability */
+/* ===== Typography upgrade: Inter ===== */
+
 body,
 input,
 select,
 textarea {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-weight: 400;
 }
 
-/* Stronger headings */
-h2, h3, h4, h5, h6 {
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
+
+/* Hero intro text */
+#banner p {
+  font-weight: 500;     /* THIS is what you’re missing */
+  font-size: 1.1em;
+}
+
+/* Buttons */
+.button {
+  font-weight: 600;
+}
+
 
 /* Banner name: confident but not shouty */
 #banner h1 {
@@ -4211,9 +4228,9 @@ p {
 #banner .hero-photo.image {
   display: block !important;
   float: none !important;
-  flex: 0 0 170px !important;
-width: 170px !important;
-  height: 170px !important;
+  flex: 0 0 190px !important;
+width: 190px !important;
+  height: 190px !important;
   overflow: hidden !important;
   border-radius: 999px !important;
 }
