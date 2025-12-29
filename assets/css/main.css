@@ -4211,9 +4211,10 @@ p {
 #banner .hero-photo.image {
   display: block !important;
   float: none !important;
-  flex: 0 0 220px !important;
+  flex: 0 0 180px !important;
   width: 180px !important;
   height: 180px !important;
+  max-width: 40%;
   border-radius: 999px !important;
   overflow: hidden !important;
 }
