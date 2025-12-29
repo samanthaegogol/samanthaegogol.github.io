@@ -4202,85 +4202,28 @@ p {
   line-height: 1.7;
 }
 
-/* --- Hero: photo + text split layout --- */
-#banner .hero-split {
+/* HERO: make the photo wrapper behave as a true flex item */
+#banner .hero-top { 
   display: flex;
   align-items: center;
   gap: 2.25rem;
-  max-width: 70rem;
 }
 
-/* Photo */
-#banner .hero-photo {
-  flex: 0 0 150px;
-  width: 150px;
-  height: 150px;
-}
-
-#banner .hero-photo img {
-  width: 150px;
-  height: 150px;
-  border-radius: 999px;
-  object-fit: cover;
-  object-position: center 20%;
-  border: solid 2px rgba(255, 255, 255, 0.18);
-}
-
-/* Text block */
-#banner .hero-text {
-  flex: 1 1 auto;
-  text-align: left;
-}
-
-/* --- Hero: photo aligns with name + intro (not buttons) --- */
-#banner .hero-top {
-  display: flex;
-  align-items: center;   /* THIS centers photo with the headline copy */
-  gap: 2.25rem;
-  max-width: 70rem;
-}
-
-/* Make photo a tad larger */
 #banner .hero-photo.image {
-  width: 170px;          /* was 150px */
-  height: 170px;
+  display: block;     /* important: overrides .image { display:inline-block } */
+  float: none;        /* safety: prevents image.left/right float behavior */
   flex: 0 0 170px;
+  width: 170px;
+  height: 170px;
   border-radius: 999px;
   overflow: hidden;
-  border: solid 2px rgba(255, 255, 255, 0.18);
+  border: 2px solid rgba(255,255,255,0.18);
 }
 
 #banner .hero-photo.image img {
+  display: block;
   width: 100%;
   height: 100%;
-  border-radius: 999px;
   object-fit: cover;
   object-position: center 20%;
-  display: block;
-}
-
-/* Copy block stays left-aligned */
-#banner .hero-copy {
-  flex: 1 1 auto;
-  text-align: left;
-}
-
-/* Buttons sit below and do NOT affect the photo alignment */
-#banner .actions {
-  margin-top: 1.25rem;
-}
-
-/* Mobile: stack nicely */
-@media screen and (max-width: 736px) {
-  #banner .hero-top {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.25rem;
-  }
-
-  #banner .hero-photo.image {
-    width: 140px;
-    height: 140px;
-    flex-basis: 140px;
-  }
 }
