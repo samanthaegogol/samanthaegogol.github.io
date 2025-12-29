@@ -4183,12 +4183,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Banner name: confident but not shouty */
 #banner h1 {
-  font-weight: 700;
+  font-weight: 900; font-size: 1.4em;
 }
 
 /* Banner descriptor text */
 #banner p {
-  font-weight: 400;
+  font-weight: 500; font-size: 1em;
 }
 
 /* Improve button legibility */
@@ -4199,7 +4199,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Improve paragraph readability */
 p {
-  line-height: 1.7;
+  line-height: 1.7; 
 }
 
 #banner .hero-top { 
@@ -4212,8 +4212,8 @@ p {
   display: block !important;
   float: none !important;
   flex: 0 0 170px !important;
-  width: 170px !important;
-  height: 170px !important;
+  width: 220px !important;
+  height: 220px !important;
   border-radius: 999px !important;
   overflow: hidden !important;
 }
