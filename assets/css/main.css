@@ -4223,3 +4223,11 @@ width: 190px !important;
   transform: scale(1.25) !important;   /* <- increase to zoom in */
   transform-origin: center;            /* <- where it “zooms from” */
 }
+
+/* Restore Font Awesome icons after font swap */
+.icon:before,
+.special:before,
+#menuToggle:before {
+  font-family: "Font Awesome 5 Free" !important;
+  font-weight: 900;
+}
