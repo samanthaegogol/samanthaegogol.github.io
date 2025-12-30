@@ -4218,20 +4218,21 @@ p {
   height: 100% !important;
   object-fit: cover !important;
 
-  /* Move the crop window toward your face */
-  object-position: 22% 18% !important;
+  /* Slightly more relaxed framing */
+  object-position: 46% 22% !important;
 
-  /* Zoom in a bit more */
-  transform: scale(1.55) !important;
+  /* Less aggressive zoom */
+  transform: scale(1.32) !important;
   transform-origin: center !important;
 }
 
-.icon:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+#banner .hero-photo.image{
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 }
 
-.special:before {
-  font-family: "Font Awesome 5 Free";
-}
+
+/* Keep theme behavior for brands vs solid */
+.icon:before { font-family: 'Font Awesome 5 Free'; }
+.icon.solid:before { font-weight: 900; }
+.icon.brands:before { font-family: 'Font Awesome 5 Brands'; font-weight: 400; }
 
