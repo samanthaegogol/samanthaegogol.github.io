@@ -4203,31 +4203,35 @@ p {
   gap: 2.25rem !important;
 }
 
-#banner .hero-photo.image {
+#banner .hero-photo.image{
   display: block !important;
   float: none !important;
-  flex: 0 0 190px !important;
-width: 190px !important;
-  height: 190px !important;
+  flex: 0 0 240px !important;
+  width: 240px !important;
+  height: 240px !important;
   overflow: hidden !important;
   border-radius: 999px !important;
 }
 
-/* Zoom the image inside the circle */
 #banner .hero-photo.image img{
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
-  object-position: center 20% !important;
 
-  transform: scale(1.25) !important;   /* <- increase to zoom in */
-  transform-origin: center;            /* <- where it “zooms from” */
+  /* Move the crop window toward your face */
+  object-position: 42% 18% !important;
+
+  /* Zoom in a bit more */
+  transform: scale(1.55) !important;
+  transform-origin: center !important;
 }
 
-/* Restore Font Awesome icons after font swap */
-.icon:before,
-.special:before,
-#menuToggle:before {
-  font-family: "Font Awesome 5 Free" !important;
+.icon:before {
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
+
+.special:before {
+  font-family: "Font Awesome 5 Free";
+}
+
