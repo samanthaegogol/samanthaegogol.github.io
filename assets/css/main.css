@@ -4222,7 +4222,7 @@ p {
   object-position: 46% 22% !important;
 
   /* Less aggressive zoom */
-  transform: scale(1.32) !important;
+  transform: scale(.5) !important;
   transform-origin: center !important;
 }
 
