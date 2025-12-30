@@ -4219,7 +4219,7 @@ p {
   object-fit: cover !important;
 
   /* Move the crop window toward your face */
-  object-position: 42% 18% !important;
+  object-position: 22% 18% !important;
 
   /* Zoom in a bit more */
   transform: scale(1.55) !important;
