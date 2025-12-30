@@ -4221,6 +4221,11 @@ p {
   /* Slightly more relaxed framing */
   object-position: 46% 22% !important;
 
+  /* Less aggressive zoom */
+  transform: scale(.2) !important;
+  transform-origin: center !important;
+}
+
 #banner .hero-photo.image{
   box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 }
