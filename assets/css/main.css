@@ -4267,7 +4267,7 @@ p {
 }
 
 .wrapper.spotlight.stack.style4 { background-color: #2f3448; }
-.wrapper.spotlight.stack.style3 { background-color: #1f2c5e; }
+.wrapper.spotlight.stack.style3 { background-color: #1d284f; }
 .wrapper.spotlight.stack.style2 { background-color: #3a4060; }
 .wrapper.spotlight.stack.style1 { background-color: #40466e; }
 
@@ -4280,7 +4280,7 @@ p {
 :root{
   --stack-1: #40466e;
   --stack-2: #3a4060;
-  --stack-3: #1f2c5e;
+  --stack-3: #1d284f;
   --stack-4: #2f3448;
 }
 
