@@ -4266,10 +4266,6 @@ p {
   width: 100% !important;
 }
 
-.wrapper.spotlight.stack.style4 { background-color: #2f3448; }
-.wrapper.spotlight.stack.style3 { background-color: #1d284f; }
-.wrapper.spotlight.stack.style2 { background-color: #3a4060; }
-.wrapper.spotlight.stack.style1 { background-color: #40466e; }
 
 /* =====================================================
    Non-home pages: stacked spotlight color scheme + wedges
@@ -4278,11 +4274,23 @@ p {
 
 /* Optional: pick your non-home palette here */
 :root{
-  --stack-1: #40466e;
-  --stack-2: #3a4060;
-  --stack-3: #1d284f;
-  --stack-4: #2f3448;
+  --stack-1: #4b5282; /* lighter */
+  --stack-2: #3f4670;
+  --stack-3: #2c314a; /* darker (more contrast vs #353849 cards) */
+  --stack-4: #23273a; /* darkest */
 }
+
+.wrapper.spotlight.stack.style1 { background-color: var(--stack-1); }
+.wrapper.spotlight.stack.style2 { background-color: var(--stack-2); }
+.wrapper.spotlight.stack.style3 { background-color: var(--stack-3); }
+.wrapper.spotlight.stack.style4 { background-color: var(--stack-4); }
+
+/* Cards inside stacked spotlight sections */
+.wrapper.spotlight.stack .features article{
+  background-color: rgba(255,255,255,0.06); /* lighter than the default */
+  border: 2px solid rgba(255,255,255,0.14);
+}
+
 
 /* Base stack wrapper */
 .wrapper.spotlight.stack{
