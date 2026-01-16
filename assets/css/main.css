@@ -4236,3 +4236,31 @@ p {
 .icon.solid:before { font-weight: 900; }
 .icon.brands:before { font-family: 'Font Awesome 5 Brands'; font-weight: 400; }
 
+/* ================================
+   Portfolio: stacked spotlight rows
+   ================================ */
+
+/* Force spotlight sections to stack (no side-by-side image/content) */
+.wrapper.spotlight.stack .inner {
+  display: block !important;
+  text-align: left !important;
+}
+
+/* Disable the alternating reverse layout */
+.wrapper.spotlight.stack:nth-child(2n - 1) .inner {
+  flex-direction: initial !important;
+  text-align: left !important;
+}
+
+/* If an image ever appears inside a stacked spotlight, make it centered/top */
+.wrapper.spotlight.stack .image {
+  float: none !important;
+  margin: 0 0 1.75em 0 !important;
+  width: 12em !important;
+  max-width: 85% !important;
+}
+
+/* Ensure content takes full width */
+.wrapper.spotlight.stack .content {
+  width: 100% !important;
+}
