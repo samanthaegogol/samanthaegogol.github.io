@@ -4327,7 +4327,10 @@ ul.intra{text-align: left; padding-left: 3em; list-style: '- '; margin: 0 0 0 0;
 
 
 <body>
-				<!-- Menu -->
+				<nav>
+			<a href="#menu">Menu</a>
+		</nav>			
+<!-- Menu -->
 					<nav id="menu">
 						<div class="inner">
 							<h2>Menu</h2>
