@@ -1,0 +1,22 @@
+id,name,amount,price,category_id
+1,Chicken Breast,120,450,1
+2,Ground Beef,95,520,1
+3,Pork Chops,80,480,1
+4,Salmon Fillet,60,890,2
+5,Shrimp,75,760,2
+6,Tuna Steak,50,920,2
+7,White Rice,200,220,3
+8,Pasta,180,190,3
+9,Quinoa,90,340,3
+10,Milk,160,150,4
+11,Cheddar Cheese,110,410,4
+12,Yogurt,140,130,4
+13,Apples,210,120,5
+14,Bananas,230,90,5
+15,Carrots,175,85,5
+16,Orange Juice,130,260,6
+17,Coffee Beans,70,980,6
+18,Green Tea,100,320,6
+19,Bread Loaf,190,140,7
+20,Croissant,85,210,7
+21,Muffins,95,230,7

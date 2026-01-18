@@ -1,0 +1,21 @@
+id,first_name,last_name,birth_date,gender,mother_phone,father_phone,city
+1,Emily,Brown,4/12/2006,F,585-555-1034,585-555-2048,Rochester
+2,David,Nguyen,11/3/2005,M,,212-555-8891,New York
+3,Amanda,Johnson,1/25/2007,F,716-555-3321,,Buffalo
+4,Michael,Smith,9/14/2004,M,585-555-7741,585-555-8812,Rochester
+5,Sarah,Wilson,6/30/2006,F,,917-555-6734,New York
+6,Andrew,Martin,2/8/2005,M,716-555-1299,,Buffalo
+7,Jessica,Anderson,10/19/2007,F,585-555-4409,585-555-9931,Rochester
+8,Daniel,Lee,12/5/2006,M,,212-555-1122,New York
+9,Ashley,Thomas,7/22/2005,F,716-555-6781,716-555-2219,Buffalo
+10,Joshua,Garcia,3/18/2004,M,585-555-9034,585-555-7765,Rochester
+11,Anna,Miller,5/9/2007,F,,917-555-4455,New York
+12,Christopher,Hernandez,8/27/2006,M,716-555-3489,,Buffalo
+13,Megan,Lopez,1/16/2005,F,585-555-6622,585-555-3018,Rochester
+14,Matthew,Gonzalez,11/11/2006,M,,212-555-7721,New York
+15,Olivia,Clark,2/3/2007,F,716-555-9402,,Buffalo
+16,Brandon,Lewis,10/29/2004,M,585-555-1818,585-555-7722,Rochester
+17,Hannah,Walker,9/7/2006,F,,917-555-6633,New York
+18,Justin,Hall,12/21/2005,M,716-555-5578,,Buffalo
+19,Nicole,Young,4/14/2007,F,585-555-9901,585-555-1144,Rochester
+20,Ethan,King,7/2/2006,M,,212-555-2299,New York
