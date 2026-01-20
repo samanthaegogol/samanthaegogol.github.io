@@ -36,36 +36,7 @@ ul.intra{text-align: left; padding-left: 3em; list-style: '- '; margin: 0 0 0 0;
 						</nav>
 					</header>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-
-								<li><a href="publications.html">Publications</a></li>
-								<li><a href="projects.html">Projects</a></li>
-
-<li><a href="portfolio.html">Coding Portfolio</a></li>
-<ul class="intra">
-<li><a href="portfolio.html#sql">SQL</a></li>
-<li><a href="portfolio.html#r">R</a></li>
-<li><a href="portfolio.html#python">Python</a></li></ul>
-
-<li><a href="repositories.html">Research Data Repositories</a></li>
-<ul class="intra">
-<li><a href="repositories.html#specimens">Dissertation Specimens</a></li>
-<li><a href="repositories.html#scans">3D Scans</a></li>
-<li><a href="repositories.html#spreadsheets">Dissertation Code</a></li>
-<li><a href="repositories.html#spreadsheets">Variable extraction & Outputs</a></li></ul>
-
-<li><a href="resume.html">Resume</a></li>
-<li><a href="cv.html">CV</a></li>
-<li><a href="#footer">Contact</a></li>
-</ul>
-<a href="#" class="close">Close</a>
-</div>
-					</nav>
+<div id="menu-placeholder"></div>
 
 				<!-- Banner -->
 <section id="banner">
@@ -308,3 +279,11 @@ ul.intra{text-align: left; padding-left: 3em; list-style: '- '; margin: 0 0 0 0;
 
 	</body>
 </html>
+
+<script>
+  fetch("assets/includes/menu.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("menu-placeholder").innerHTML = data;
+    });
+</script>

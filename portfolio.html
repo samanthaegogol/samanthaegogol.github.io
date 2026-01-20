@@ -25,9 +25,8 @@ h4.major{font-size: 0.9em;}
     <!-- Header -->
     <header id="header">
       <h1><a href="index.html">Samantha Gogol</a></h1>
-      <nav>
-       <a href="#menu">Menu</a>
-      </nav>
+<div id="menu-placeholder"></div>
+
     </header>
 
  
@@ -229,3 +228,12 @@ h4.major{font-size: 0.9em;}
 
 </body>
 </html>
+
+<script>
+  fetch("assets/includes/menu.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("menu-placeholder").innerHTML = data;
+    });
+</script>
+

@@ -25,40 +25,11 @@ h4.major{font-size: 0.9em;}
     <!-- Header -->
     <header id="header">
       <h1><a href="index.html">Samantha Gogol</a></h1>
-      <nav>
-        <a href="#menu">Menu</a>
-      </nav>
+    <div id="menu-placeholder"></div>
+
     </header>
 
-    <!-- Menu -->
-    <nav id="menu">
-      <div class="inner">
-        <h2>Menu</h2>
-        <ul class="links">
-          <li><a href="index.html">Home</a></li>
-
-          <li><a href="index.html#skills">Skills</a></li>
-          <li><a href="index.html#focus">Current Focus</a></li>
-
-          <li><a href="publications.html">Publications</a></li>
-          <li><a href="projects.html">Projects</a></li>
-
-          <li><a href="portfolio.html">Coding Portfolio</a></li>
-          <li><a href="portfolio.html#sql">— SQL</a></li>
-          <li><a href="portfolio.html#r">— R</a></li>
-          <li><a href="portfolio.html#python">— Python</a></li>
-
-          <li><a href="repositories.html">Data Repositories</a></li>
-          <li><a href="repositories.html#dissertation">— Dissertation Data & Code</a></li>
-          <li><a href="repositories.html#scans">— 3D Scans</a></li>
-          <li><a href="repositories.html#spreadsheets">— Spreadsheets</a></li>
-
-          <li><a href="cv.html">CV</a></li>
-          <li><a href="#footer">Contact</a></li>
-        </ul>
-        <a href="#" class="close">Close</a>
-      </div>
-    </nav>
+  
 
     <!-- Main -->
     <section id="wrapper">
@@ -67,224 +38,241 @@ h4.major{font-size: 0.9em;}
         <div class="inner">
           <h2>Data Repositories</h2>
           <p>
-           STUFF
+            This page organizes the datasets, 3D models, and reproducible code repositories that support my dissertation
+            research on carnivore bone surface modifications (BSMs). Repositories are grouped by workflow stage:
+            (1) specimen metadata, (2) 3D scans and processing protocols, and (3) analysis code for landmarking, variable
+            extraction, and statistical modeling.
           </p>
 
           <ul class="actions">
             <li><a href="#spec" class="button">Jump to Specimens</a></li>
-            <li><a href="#scans" class="button">Jump to 3D Scans</a></li>
-            <li><a href="#scans" class="button">Jump to Protocols</a></li>
+            <li><a href="#scan" class="button">Jump to 3D Scans</a></li>
+            <li><a href="#sharing" class="button">Jump to Sharing Notes</a></li>
           </ul>
- <ul class="actions">
-            <li><a href="#pyt" class="button">Python: Landmarking Code</a></li>
-            <li><a href="#vars" class="button">R: Shape Variables</a></li>
-            <li><a href="#" class="button">R: Analysis & Modeling</a></li>
+
+          <ul class="actions">
+            <li><a href="#pyt" class="button">Python: Landmarking</a></li>
+            <li><a href="#vars" class="button">R: Variables</a></li>
+            <li><a href="#model" class="button">R: Modeling</a></li>
           </ul>
         </div>
       </header>
 
-      <!-- Content -->
-<section id="spec" class="wrapper spotlight stack style1">
-<div class="inner">
-          <!-- SPECIMENS -->
-               <h3 class="major">Dissertation Specimens</h3>
-            <p>
-   STUFF
-            </p>
+      <!-- Specimens -->
+      <section id="spec" class="wrapper spotlight stack style1">
+        <div class="inner">
+          <h3 class="major">Dissertation Specimens</h3>
+          <p>
+            Specimen resources are organized around two complementary datasets: curated museum collections used to build
+            comparative reference models, and experimental assemblages used to test equifinality and validate measurement
+            and classification workflows under controlled conditions.
+          </p>
 
-            <section class="features">
-              <article>
-                <h4 class="major">National Museum of Natural History Collections</h4>
-                <p>
-                  STUFF
-                </p>
-                <ul class="actions">
-                  <li><a href="https://github.com/samanthaegogol" target="_blank" rel="noopener" class="button small">GitHub (add repo link)</a></li>
-                </ul>
-              </article>
+          <section class="features">
+            <article>
+              <h4 class="major">National Museum of Natural History Collections</h4>
+              <p>
+                Comparative reference specimens scanned and analyzed during NMNH collections work. This repository emphasizes
+                specimen metadata (IDs, provenience/collection context where shareable), scan provenance, and traceable links
+                between specimens and derived outputs (landmarks, shape variables, and surface metrics).
+              </p>
+              <ul class="actions">
+                <li><a href="https://github.com/samanthaegogol" target="_blank" rel="noopener" class="button small">GitHub (add repo link)</a></li>
+              </ul>
+            </article>
 
-              <article>
-                <h4 class="major">University Experimental Assemblages</h4>
-                <p>
-STUFF
-                </p>
-                <ul class="actions">
-                  <li><a href="https://github.com/samanthaegogol" target="_blank" rel="noopener" class="button small">GitHub (add repo link)</a></li>
-                </ul>
-              </article>
-            </section>
+            <article>
+              <h4 class="major">University Experimental Assemblages</h4>
+              <p>
+                Experimental datasets and teaching/research assemblages used for method development and robustness testing.
+                Focuses on repeatability, mesh-quality sensitivity, and overlap among mark types prior to application on fossil
+                material. When primary data are restricted, this repo points to approved derivatives and reproducible pipelines.
+              </p>
+              <ul class="actions">
+                <li><a href="https://github.com/samanthaegogol" target="_blank" rel="noopener" class="button small">GitHub (add repo link)</a></li>
+              </ul>
+            </article>
+          </section>
 
-            <p style="margin-top: 1rem;">
-              <strong>Typical tools:</strong> STUFF.
-            </p>
-</div>          
-</section>
-
-
-      <!-- Content -->
-<section id="scan" class="wrapper alt spotlight stack style2">
-<div class="inner">
-          <!-- SCANS & PROTOCOLS -->
-               <h3 class="major">3D Scans & Protocols</h3>
-            <p>
-   STUFF
-            </p>
-
-            <section class="features">
-              <article>
-                <h4 class="major">3D Scans</h4>
-                <p>
-                  STUFF
-                </p>
-                <ul class="actions">
-                  <li><a href="https://github.com/samanthaegogol" target="_blank" rel="noopener" class="button small">GitHub (add repo link)</a></li>
-                </ul>
-              </article>
-
-              <article>
-                <h4 class="major">Protocols</h4>
-                <p>
-STUFF
-                </p>
-                <ul class="actions">
-                  <li><a href="https://github.com/samanthaegogol" target="_blank" rel="noopener" class="button small">GitHub (add repo link)</a></li>
-                </ul>
-              </article>
-            </section>
-
-            <p style="margin-top: 1rem;">
-              <strong>Typical tools:</strong> David SLS-3, Artec Spider II, Transcan C, Geomagic Design X.
-            </p>
-</div>          
-</section>
-
-
-
-          <!-- Python -->
-   <section id="r" class="wrapper spotlight stack style3">
-  <div class="inner">
-            <h3 class="major">Python: Batch Landmarking in 3D Slicer</h3>
-            <p>
-              Statistical workflows, reproducible analysis scripts, visualization, and model evaluation.
-              Examples emphasize clean data handling, transparent transformations, and interpretable outputs.
-            </p>
-
-            <section class="features">
-              <article>
-                <h4 class="major">Batch Landmarking in 3D Slicer</h4>
-                <p>
-STUFF
-                </p>
-                <ul class="actions">
-                  <li><a href="https://github.com/samanthaegogol-site/dissertation-code/Python-landmarking_3Dslicer" target="_blank" rel="noopener" class="button small">GitHub (add repo link)</a></li>
-                </ul>
-              </article>
-
-              <article>
-                <h4 class="major"> Landmark Visualization</h4>
-                <p>
-STUFF
-                </p>
-                <ul class="actions">
-                  <li><a href="https://github.com/samanthaegogol-site/dissertation-code/Landmark_visualization_examples" target="_blank" rel="noopener" class="button small">GitHub (add repo link)</a></li>
-                </ul>
-              </article>
-            </section>
-
-            <p style="margin-top: 1rem;">
-              <strong>Typical tools:</strong> STUFF
-            </p>
-</div>
-</section>
-
-          <!-- R:var extract -->
- <section id="vars" class="wrapper spotlight alt stack style4">
-  <div class="inner">
-
-            <h3 class="major">Dental Topographic Analysis (DTA) Variables</h3>
-            <p>
-   STUFF
-            </p>
-
-            <section class="features">
-              <article>
-                <h4 class="major">Shape Variables and Efourier</h4>
-                <p>
-                STUFF
-                </p>
-                <ul class="actions">
-                  <li><a href="https://github.com/samanthaegogol-site/dissertation-code/R-non_landmark_vars" target="_blank" rel="noopener" class="button small">GitHub (add repo link)</a></li>
-                </ul>
-              </article>
-
-              <article>
-                <h4 class="major">Example: Data Quality Checks</h4>
-                <p>
-                  Queries that flag missingness, duplicates, and outliers—useful for QA/QC prior to modeling.
-                </p>
-                <ul class="actions">
-                  <li><a href="https://github.com/samanthaegogol-site/dissertation-code/R-GPA, data_reduction" target="_blank" rel="noopener" class="button small">GitHub (add repo link)</a></li>
-                </ul>
-              </article>
-            </section>
-
-            <p style="margin-top: 1rem;">
-              <strong>Typical tools:</strong> STUFF
-            </p>
-</div>
-</section>
-
-          <!-- R:Multi -->
- <section id="multi" class="wrapper spotlight stack style2">
-  <div class="inner">
-
-            <h3 class="major">R: Multivariate Analyses & Predictive Modeling</h3>
-            <p>
-              STUFF
-            </p>
-
-            <section class="features">
-              <article>
-                <h4 class="major">Descriminant Function, etc etc STUFF</h4>
-                <p>
-                  STUFF
-                </p>
-                <ul class="actions">
-                  <li><a href="https://github.com/samanthaegogol-site/dissertation-code/R-Multivariate_Analysis" target="_blank" rel="noopener" class="button small">GitHub (add repo link)</a></li>
-                </ul>
-              </article>
-
-              <article>
-                <h4 class="major">Machine Learning (ML) Algorithm(s)</h4>
-                <p>
-             STUFF
-                </p>
-                <ul class="actions">
-                  <li><a href="https://github.com/samanthaegogol-site/dissertation-code/R-Machine_Learning_Predictive_Model(s)" target="_blank" rel="noopener" class="button small">GitHub (add repo link)</a></li>
-                </ul>
-              </article>
-            </section>
-
-            <p style="margin-top: 1rem;">
-              <strong>Typical tools:</strong> STUFF
-            </p>
-</div>
-</section>
-
-          <!-- Notes -->
-   <section id="sharing" class="wrapper alt spotlight stack style1">
-  <div class="inner">
-            <h3 class="major">Notes on Data Sharing</h3>
-            <p>
-              Portfolio repositories may include synthetic, anonymized, or downsampled datasets for demonstration purposes.
-              Dissertation-related code and derived datasets are organized separately under
-              <a href="repositories.html#dissertation">Dissertation Data & Code</a>.
-            </p>
-        </div>          
-</section>
-
+          <p style="margin-top: 1rem;">
+            <strong>Typical tools:</strong> structured metadata tables (CSV), Git/GitHub, R (tidyverse), and consistent folder conventions for reproducibility.
+          </p>
         </div>
-      </div>
+      </section>
+
+      <!-- Scans & Protocols -->
+      <section id="scan" class="wrapper alt spotlight stack style2">
+        <div class="inner">
+          <h3 class="major">3D Scans & Protocols</h3>
+          <p>
+            Scan repositories include processed surface meshes used for analysis, along with documentation for acquisition,
+            post-processing, and quality control. Protocols emphasize consistent preprocessing so that curvature-based and
+            landmark-based measures are comparable across specimens and instruments.
+          </p>
+
+          <section class="features">
+            <article>
+              <h4 class="major">3D Scans</h4>
+              <p>
+                Cleaned and standardized 3D surface meshes (e.g., PLY/OBJ) prepared for morphometrics and surface topography.
+                Where applicable, repositories include decimated or permission-approved derivatives rather than raw archival scans.
+              </p>
+              <ul class="actions">
+                <li><a href="https://github.com/samanthaegogol" target="_blank" rel="noopener" class="button small">GitHub (add repo link)</a></li>
+              </ul>
+            </article>
+
+            <article>
+              <h4 class="major">Protocols</h4>
+              <p>
+                Step-by-step documentation for scanning, mesh cleaning, remeshing/decimation, and coordinate conventions.
+                Includes QA/QC checks (normals, face counts, topology flags) and batch-processing guidance for consistent outputs.
+              </p>
+              <ul class="actions">
+                <li><a href="https://github.com/samanthaegogol" target="_blank" rel="noopener" class="button small">GitHub (add repo link)</a></li>
+              </ul>
+            </article>
+          </section>
+
+          <p style="margin-top: 1rem;">
+            <strong>Typical tools:</strong> David SLS-3, Artec Spider II, Transcan C, Geomagic Design X, MeshLab/Blender, and standardized mesh QA checks.
+          </p>
+        </div>
+      </section>
+
+      <!-- Python -->
+      <section id="pyt" class="wrapper spotlight stack style3">
+        <div class="inner">
+          <h3 class="major">Python: Batch Landmarking in 3D Slicer</h3>
+          <p>
+            Automated landmarking utilities designed for high-throughput 3D mesh workflows. The goal is to reduce manual
+            bottlenecks while keeping placements reproducible, inspectable, and compatible with downstream R morphometrics.
+          </p>
+
+          <section class="features">
+            <article>
+              <h4 class="major">Batch Landmarking in 3D Slicer</h4>
+              <p>
+                Scripts/macros to place fixed landmarks consistently across many specimens in 3D Slicer, export standardized
+                landmark files, and log run metadata. Supports batch processing and minimizes manual steps while preserving
+                anatomical landmark logic.
+              </p>
+              <ul class="actions">
+                <li><a href="https://github.com/samanthaegogol-site/dissertation-code/Python-landmarking_3Dslicer" target="_blank" rel="noopener" class="button small">GitHub (repo)</a></li>
+              </ul>
+            </article>
+
+            <article>
+              <h4 class="major">Landmark Visualization & QA</h4>
+              <p>
+                Quick visual checks to confirm landmark order, sidedness, and surface projection. Includes examples for overlaying
+                landmarks on meshes, generating QA snapshots, and flagging specimens that need manual review.
+              </p>
+              <ul class="actions">
+                <li><a href="https://github.com/samanthaegogol-site/dissertation-code/Landmark_visualization_examples" target="_blank" rel="noopener" class="button small">GitHub (repo)</a></li>
+              </ul>
+            </article>
+          </section>
+
+          <p style="margin-top: 1rem;">
+            <strong>Typical tools:</strong> 3D Slicer (Python), VTK-based workflows, mesh IO (PLY/OBJ), Git/GitHub, and lightweight QA images/logs.
+          </p>
+        </div>
+      </section>
+
+      <!-- R: Variables (2 boxes) -->
+      <section id="vars" class="wrapper spotlight alt stack style4">
+        <div class="inner">
+          <h3 class="major">R: Additional Shape Variables</h3>
+          <p>
+            Variable-extraction pipelines that complement landmark-based morphometrics. These workflows produce modeling-ready
+            tables and include preprocessing checks so that derived variables can be traced back to input meshes and parameters.
+          </p>
+
+          <section class="features">
+            <article>
+              <h4 class="major">Outline Shape Variables (EFA / EFourier)</h4>
+              <p>
+                Scripts for generating additional shape descriptors beyond fixed landmarks, including outline-based approaches
+                such as Elliptic Fourier Analysis. Useful for exploratory comparisons, dimensionality reduction, and feature
+                integration alongside other variables.
+              </p>
+              <ul class="actions">
+                <li><a href="https://github.com/samanthaegogol-site/dissertation-code/R-non_landmark_vars" target="_blank" rel="noopener" class="button small">GitHub (repo)</a></li>
+              </ul>
+            </article>
+
+            <article>
+              <h4 class="major">Dental Topographic / Surface Metrics</h4>
+              <p>
+                Batch workflows for surface-derived metrics (e.g., curvature-based measures) and associated QA/QC steps. Includes
+                fallbacks for cleaning and decimation when meshes exceed face-count thresholds or contain minor topology issues.
+              </p>
+              <ul class="actions">
+                <li><a href="https://github.com/samanthaegogol-site/dissertation-code/R-DTA_Variables" target="_blank" rel="noopener" class="button small">GitHub (add repo link)</a></li>
+              </ul>
+            </article>
+          </section>
+
+          <p style="margin-top: 1rem;">
+            <strong>Typical tools:</strong> geomorph, Morpho, tidyverse, batch file IO, and reproducible export tables (CSV) for modeling.
+          </p>
+        </div>
+      </section>
+
+      <!-- R: Modeling (2 boxes) -->
+      <section id="model" class="wrapper spotlight stack style2">
+        <div class="inner">
+          <h3 class="major">R: Multivariate Analyses & Predictive Modeling</h3>
+          <p>
+            Statistical and machine-learning workflows used to evaluate group structure, quantify separation among classes,
+            and predict mark type and/or taxon actor from combined morphometric and surface-derived variables.
+          </p>
+
+          <section class="features">
+            <article>
+              <h4 class="major">Multivariate Statistics (PCA / CVA / DFA)</h4>
+              <p>
+                Reproducible scripts for ordination, group separation, and model interpretation. Includes publication-quality
+                plots (e.g., PCA/CVA scatterplots, deformation/TPS visualizations where applicable) and embedded notes describing
+                what each output indicates.
+              </p>
+              <ul class="actions">
+                <li><a href="https://github.com/samanthaegogol-site/dissertation-code/R-Multivariate_Analysis" target="_blank" rel="noopener" class="button small">GitHub (repo)</a></li>
+              </ul>
+            </article>
+
+            <article>
+              <h4 class="major">Machine Learning Models</h4>
+              <p>
+                Predictive modeling pipelines built around transparent evaluation: train/test splits, cross-validation, feature
+                selection, and error interpretation (confusion matrices, class imbalance checks, sensitivity analyses). Designed
+                to support robust inference before applying models to fossil datasets.
+              </p>
+              <ul class="actions">
+                <li><a href="https://github.com/samanthaegogol-site/dissertation-code/R-Machine_Learning_Predictive_Model(s)" target="_blank" rel="noopener" class="button small">GitHub (repo)</a></li>
+              </ul>
+            </article>
+          </section>
+
+          <p style="margin-top: 1rem;">
+            <strong>Typical tools:</strong> geomorph, tidyverse, ggplot2, caret/tidymodels (or equivalent), and consistent session/documentation practices.
+          </p>
+        </div>
+      </section>
+
+      <!-- Notes -->
+      <section id="sharing" class="wrapper alt spotlight stack style1">
+        <div class="inner">
+          <h3 class="major">Notes on Data Sharing</h3>
+          <p>
+            Some repositories include synthetic, anonymized, downsampled, or permission-approved derivatives for demonstration
+            purposes. When primary data are access-restricted (e.g., museum collections), this page links to the shareable
+            components of the workflow (code, parameters, templates, and derived outputs where allowable).
+          </p>
+        </div>
+      </section>
+
     </section>
 
     <!-- Footer -->
@@ -318,3 +306,11 @@ STUFF
 
 </body>
 </html>
+<script>
+  fetch("assets/includes/menu.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("menu-placeholder").innerHTML = data;
+    });
+</script>
+

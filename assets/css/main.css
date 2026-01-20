@@ -4320,3 +4320,15 @@ p {
 }
 
 
+#menu ul.intra {
+  margin-left: 1.25em;
+  font-size: 0.9em;
+}
+
+#menu ul.intra li a {
+  opacity: 0.85;
+}
+
+#menu ul.intra li a:hover {
+  opacity: 1;
+}
