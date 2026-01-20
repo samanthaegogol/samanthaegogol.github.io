@@ -282,7 +282,8 @@
     const target = document.getElementById("menu-placeholder");
     if (!target) return;
 
-    fetch("assets/includes/menu.html", { cache: "no-store" })
+    fetch("menu.html", { cache: "no-store" })
+
       .then((response) => {
         if (!response.ok) throw new Error("Menu include not found: " + response.status);
         return response.text();
