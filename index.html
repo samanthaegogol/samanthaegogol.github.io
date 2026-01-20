@@ -37,6 +37,11 @@
 
 <div id="menu-placeholder"></div>
 
+<template id="menu-template">
+  <!-- paste the contents of menu.html here -->
+</template>
+
+
 				<!-- Banner -->
 <section id="banner">
 <div class="inner">
@@ -278,23 +283,20 @@
 <script>
   (function () {
     const target = document.getElementById("menu-placeholder");
-    if (!target) return;
+    const tpl = document.getElementById("menu-template");
+    if (!target || !tpl) return;
+    target.appendChild(tpl.content.cloneNode(true));
+  })();
 
-    fetch("menu.html", { cache: "no-store" })
-      .then((response) => {
-        if (!response.ok) throw new Error("Menu include not found: " + response.status);
-        return response.text();
-      })
-      .then((html) => {
-        target.innerHTML = html;
-      })
-      .catch((err) => {
-        console.warn(err);
-        target.innerHTML = "";
-      });
+<script>
+  (function () {
+    const target = document.getElementById("menu-placeholder");
+    const tpl = document.getElementById("menu-template");
+    if (!target || !tpl) return;
+    target.appendChild(tpl.content.cloneNode(true));
   })();
 </script>
 
-<script src="assets/js/main.js"></script>
-	</body>
+</script>
+</body>
 </html>
