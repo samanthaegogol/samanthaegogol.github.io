@@ -35,7 +35,7 @@
   </nav>
 </header>
 
-<div id="menu.html"></div>
+<div id="menu-placeholder"></div>
 
 				<!-- Banner -->
 <section id="banner">
@@ -275,14 +275,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
-<script>
-  fetch("assets/includes/menu.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("menu-placeholder").innerHTML = data;
-    });
-</script>
 
 
 <script>
