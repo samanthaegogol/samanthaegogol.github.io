@@ -30,8 +30,12 @@
 						<h1><a href="index.html">Samantha Gogol</a></h1>
 
 
-<div id="menu-placeholder"></div>
+  <nav>
+    <a href="#menu">Menu</a>
+  </nav>
 </header>
+
+<div id="menu.html"></div>
 
 				<!-- Banner -->
 <section id="banner">
@@ -272,9 +276,6 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	</body>
-</html>
-
 <script>
   fetch("assets/includes/menu.html")
     .then(response => response.text())
@@ -282,3 +283,28 @@
       document.getElementById("menu-placeholder").innerHTML = data;
     });
 </script>
+
+
+<script>
+  (function () {
+    const target = document.getElementById("menu-placeholder");
+    if (!target) return;
+
+    fetch("assets/includes/menu.html", { cache: "no-store" })
+      .then((response) => {
+        if (!response.ok) throw new Error("Menu include not found: " + response.status);
+        return response.text();
+      })
+      .then((html) => {
+        target.innerHTML = html;
+      })
+      .catch((err) => {
+        console.warn(err);
+        // Optional: show nothing, or a tiny fallback link
+        target.innerHTML = "";
+      });
+  })();
+</script>
+
+	</body>
+</html>
