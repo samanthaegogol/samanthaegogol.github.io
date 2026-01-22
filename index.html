@@ -319,47 +319,6 @@
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
 
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-
-<script>
-(function () {
-  const target = document.getElementById("menu-placeholder");
-  if (!target) return;
-
-  fetch("/menu.html")  // ✅ menu.html at site root
-    .then(r => {
-      if (!r.ok) throw new Error("Menu fetch failed: " + r.status);
-      return r.text();
-    })
-    .then(html => {
-      target.innerHTML = html;
-
-      // ✅ Re-wire the off-canvas menu AFTER injection
-      if (window.jQuery && jQuery.fn && jQuery.fn.panel) {
-        jQuery("#menu").panel({
-          delay: 500,
-          hideOnClick: true,
-          hideOnSwipe: true,
-          resetScroll: true,
-          resetForms: true,
-          side: "right",
-          target: jQuery("body"),
-          visibleClass: "is-menu-visible"
-        });
-      } else {
-        console.error("panel() not available. util.js may not be loading correctly.");
-      }
-    })
-    .catch(err => console.error(err));
-})();
-</script>
-
-
 
 </body>
 </html>
