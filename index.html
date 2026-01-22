@@ -277,46 +277,46 @@
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
 
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
 <script>
-  (function () {
-    const target = document.getElementById("menu-placeholder");
-    if (!target) return;
+(function () {
+  const target = document.getElementById("menu-placeholder");
+  if (!target) return;
 
-    // ✅ If you put menu.html in assets/includes/
-    const MENU_URL = "/assets/includes/menu.html";
+  fetch("/menu.html")  // ✅ menu.html at site root
+    .then(r => {
+      if (!r.ok) throw new Error("Menu fetch failed: " + r.status);
+      return r.text();
+    })
+    .then(html => {
+      target.innerHTML = html;
 
-    // If you keep menu.html in the same folder as each page instead, use:
-    // const MENU_URL = "menu.html";
-
-    fetch(MENU_URL)
-      .then(res => {
-        if (!res.ok) throw new Error("Menu fetch failed: " + res.status);
-        return res.text();
-      })
-      .then(html => {
-        target.innerHTML = html;
-
-        // ✅ Re-initialize Solid State "panel" menu AFTER it exists in the DOM
-        if (window.jQuery && jQuery.fn && jQuery.fn.panel) {
-          jQuery("#menu").panel({
-            delay: 500,
-            hideOnClick: true,
-            hideOnSwipe: true,
-            resetScroll: true,
-            resetForms: true,
-            side: "right",
-            target: jQuery("body"),
-            visibleClass: "is-menu-visible"
-          });
-        } else {
-          console.warn("panel() not found — check util.js is loading correctly.");
-        }
-      })
-      .catch(err => {
-        console.error(err);
-      });
-  })();
+      // ✅ Re-wire the off-canvas menu AFTER injection
+      if (window.jQuery && jQuery.fn && jQuery.fn.panel) {
+        jQuery("#menu").panel({
+          delay: 500,
+          hideOnClick: true,
+          hideOnSwipe: true,
+          resetScroll: true,
+          resetForms: true,
+          side: "right",
+          target: jQuery("body"),
+          visibleClass: "is-menu-visible"
+        });
+      } else {
+        console.error("panel() not available. util.js may not be loading correctly.");
+      }
+    })
+    .catch(err => console.error(err));
+})();
 </script>
+
 
 
 </body>
