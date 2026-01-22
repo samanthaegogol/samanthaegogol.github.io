@@ -299,21 +299,30 @@
 
   </div>
 
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrollex.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
+		<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
 
-</body>
-</html>
 <script>
-  fetch("assets/includes/menu.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("menu-placeholder").innerHTML = data;
-    });
+  (function () {
+    const target = document.getElementById("menu-placeholder");
+    const tpl = document.getElementById("menu-template");
+    if (!target || !tpl) return;
+    target.appendChild(tpl.content.cloneNode(true));
+  })();
+
+<script>
+  (function () {
+    const target = document.getElementById("menu-placeholder");
+    const tpl = document.getElementById("menu-template");
+    if (!target || !tpl) return;
+    target.appendChild(tpl.content.cloneNode(true));
+  })();
 </script>
 
+</script>
+</body>
+</html>
