@@ -37,10 +37,6 @@
 
 <div id="menu-placeholder"></div>
 
-<template id="menu-template">
-  <!-- paste the contents of menu.html here -->
-</template>
-
 
 				<!-- Banner -->
 <section id="banner">
@@ -274,29 +270,34 @@
 </div>
 
 		<!-- Scripts -->
+<!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.scrollex.min.js"></script>
 <script src="assets/js/browser.min.js"></script>
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 
 <script>
   (function () {
     const target = document.getElementById("menu-placeholder");
-    const tpl = document.getElementById("menu-template");
-    if (!target || !tpl) return;
-    target.appendChild(tpl.content.cloneNode(true));
-  })();
+    if (!target) return;
 
-<script>
-  (function () {
-    const target = document.getElementById("menu-placeholder");
-    const tpl = document.getElementById("menu-template");
-    if (!target || !tpl) return;
-    target.appendChild(tpl.content.cloneNode(true));
+    fetch("assets/includes/menu.html")
+      .then(res => {
+        if (!res.ok) throw new Error("Menu fetch failed: " + res.status);
+        return res.text();
+      })
+      .then(html => {
+        target.innerHTML = html;
+      })
+      .catch(err => {
+        console.error(err);
+        // Optional: show a visible fallback for debugging
+        // target.innerHTML = "<!-- menu failed to load -->";
+      });
   })();
 </script>
 
-</script>
 </body>
 </html>
