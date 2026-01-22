@@ -270,7 +270,6 @@
 </div>
 
 		<!-- Scripts -->
-<!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.scrollex.min.js"></script>
 <script src="assets/js/browser.min.js"></script>
@@ -283,21 +282,42 @@
     const target = document.getElementById("menu-placeholder");
     if (!target) return;
 
-    fetch("assets/includes/menu.html")
+    // ✅ If you put menu.html in assets/includes/
+    const MENU_URL = "/assets/includes/menu.html";
+
+    // If you keep menu.html in the same folder as each page instead, use:
+    // const MENU_URL = "menu.html";
+
+    fetch(MENU_URL)
       .then(res => {
         if (!res.ok) throw new Error("Menu fetch failed: " + res.status);
         return res.text();
       })
       .then(html => {
         target.innerHTML = html;
+
+        // ✅ Re-initialize Solid State "panel" menu AFTER it exists in the DOM
+        if (window.jQuery && jQuery.fn && jQuery.fn.panel) {
+          jQuery("#menu").panel({
+            delay: 500,
+            hideOnClick: true,
+            hideOnSwipe: true,
+            resetScroll: true,
+            resetForms: true,
+            side: "right",
+            target: jQuery("body"),
+            visibleClass: "is-menu-visible"
+          });
+        } else {
+          console.warn("panel() not found — check util.js is loading correctly.");
+        }
       })
       .catch(err => {
         console.error(err);
-        // Optional: show a visible fallback for debugging
-        // target.innerHTML = "<!-- menu failed to load -->";
       });
   })();
 </script>
+
 
 </body>
 </html>
